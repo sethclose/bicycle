@@ -12,7 +12,7 @@ class Frame(object):
     def __init__(self, weight, cost, material):
         self.weight = weight;
         self.cost = cost; 
-        self.material = material;
+        self.material = material; 
         self.name = self.material[0] + str(self.weight)
     def describe(self):
         print "The {} {} frame weighs {} kg and costs ${}." .format(self.name, self.material, self.weight, self.cost)
